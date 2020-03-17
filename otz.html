@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- видимость экрана-->
+    <titl> ___  </title>
+    <link rel="stylesheet" type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css"> <!-- значки соц сетей в документе  -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>  
+  
+  <body>
+
+
+    <header>
+        <nav class="container">
+          <a class="logo" href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D1%81%D1%8B">
+            <span>Ч</span>
+            <span>А</span>
+            <span>С</span>
+            <span>Ы</span>
+          </a>
+
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">РЕГИСТРАЦИЯ</button>
+            
+
+           <!--<div class="nav-toggle"><span> </span></div>
+          <form action="" method="get" id="searchform">    поиск  как включить  
+              <input type="text" placeholder="Искать на сайте...">
+              <button type="submit"><i class="fa fa-search"></i></button>  
+            </form> -->
+                <ul id="menu">
+                  <li><a href="">БРЕНДЫ</a></li>
+                  <li><a href="">ФОТО</a></li>
+                  <li><a href="">ОТЗЫВ</a></li>
+                </ul>
+        </nav>
+
+       
+
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container3">
+      <h1>Регистрация</h1>
+      <p>Заполните форму</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Повторить пароль</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+      </label>
+
+      
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Закрыть</button>
+        <button type="submit" class="signupbtn">Зарегистрироваться</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+    </header>
+  
+
+
+
+
+
+
+
+
+
+
+<div class="container2">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Имя</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Имя..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Фамилия</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Фамилия..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Страна</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Украина</option>
+          <option value="canada">Россия</option>
+          <option value="usa">Белоруссия</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Ваш отзыв</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Текс.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Отправить">
+    </div>
+  </form>
+</div>
+
+
+
+
+
+  
+<footer>
+  <div class="container">
+    <div class="footer-col">
+      <span> © 2020</span>
+    <p>По стране-изготовителю:</p>
+  <ul>
+    <li><a href="#">Российские</a></li> 
+    <li><a href="#">Швейцарские</a></li> 
+    <li><a href="#">Японские</a></li> 
+    <li><a href="#">Американские</a></li> 
+  </ul>
+    </div>
+    <div class="footer-col">
+      <div class="social-bar-wrap">
+        <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook fa-3x"></i></a>
+        <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+        <a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest fa-3x"></i></a>
+        <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <p>Написать письмо</p>
+      <ul class="test">
+        <li><a href="#">https://deka.ua/</a>
+        <li><a href="#">https://vector-d.ua/</a></li>
+        <li><a href="#">https://timebar.ua/</a></li>
+      </ul>
+    </div>
+  
+</footer>
+</body>
+</html>
+
+
